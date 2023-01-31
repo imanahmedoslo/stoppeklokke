@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="myscripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Timer</h1>
+    <div id="timerOuterDiv" class="timerOuterDiv">
+        <p>it has been...</p>
+        <div id="timerInnerDiv" class="timerInnerDiv">
+        <p id="days">days</p>
+        <p id="hours">hours</p>
+        <p id="minutes">minutes</p>
+        <p id="seconds">seconds</p>
+        </div>
+        <p>since you started the timer</p>
+        <button id="changeButton" onclick="startTimer()"> Start counting now!</button>
+    </div>
+    <div id="pastIntervals" class="pastIntervals">
+        <p>list of your past intervals</p>
+    </div>
+    <button onclick="showRigTimer()">I want to rig your timer</button>
+    <p id="numberPTag"></p>
+    <div id="inputForm" class="a hidden">
+        <p>hmm, interesting! give me four numbers from 1 to 23 that I can do some magic with</p>
+        <div class="inputForm">
+            <input id="0" class="numberInput" type="number" min="1" max="23">
+            <input id="1" class="numberInput" type="number" min="1" max="23">
+            <input id="2" class="numberInput" type="number" min="1" max="23">
+            <input id="3" class="numberInput" type="number" min="1" max="23">
+        </div>
+        <button onclick="compareArrays()"> use these numbers!</button>
+    </div>
+</body>
+</html>
